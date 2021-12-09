@@ -16,8 +16,10 @@ const { Controller } = require('../controller/Controller');
 router.get('/', Controller.homepage);
 
 // Register
+// router.post('/register', Controller.register);
 
 // Login
+// router.post('/login', Controller.login );
 
 // Books Routing
 router.use('/books', bookRouter);
@@ -25,4 +27,4 @@ router.use('/books', bookRouter);
 // User Routing
 router.use('/users', userRouter);
 
-module.exports = { router }
+module.exports = { router };
